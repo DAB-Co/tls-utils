@@ -1,0 +1,25 @@
+{
+  "name": "@dab-co/tls-utils",
+  "version": "1.0.0",
+  "description": "tls certificates using openssl",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/generate_client_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DAB-Co/tls-utils.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "author": "Dab Co.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DAB-Co/tls-utils/issues"
+  },
+  "homepage": "https://github.com/DAB-Co/tls-utils#readme"
+}
