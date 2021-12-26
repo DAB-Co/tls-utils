@@ -1,6 +1,6 @@
 {
   "name": "@dab-co/tls-utils",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "tls certificates using openssl",
   "main": "main.js",
   "directories": {
