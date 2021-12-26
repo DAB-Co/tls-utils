@@ -21,8 +21,8 @@ async function generate_new_client(ca_certificate_path, ca_key_path) {
     openssl genrsa -out client.key 4096 && 
     openssl req -out client.csr -key client.key -new  < \"${inp_path}\" && 
     openssl x509 -req -in client.csr -CA \"${ca_certificate_path}\" -CAkey \"${ca_key_path}\" -CAcreateserial -out client.crt`);
-    let cert = fs.readFileSync(path.join(cert_dir, "client.crt"));
-    let key = fs.readFileSync(path.join(cert_dir, "client.key"));
+    let cert = fs.readFileSync(path.join(cert_dir, "client.crt"), "utf-8");
+    let key = fs.readFileSync(path.join(cert_dir, "client.key"), "utf-8");
     await run_command(`rm -rf \"${cert_dir}\"`);
     return {
         key: key,
