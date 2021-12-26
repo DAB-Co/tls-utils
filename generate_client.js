@@ -2,6 +2,16 @@ const path = require("path");
 const fs = require("fs");
 const run_command = require(path.join(__dirname, "run_command.js"));
 
+/**
+ *
+ * Takes ca certificate and ca key path.
+ *
+ * Generates a dictionary containing new certificate and key for client to use
+ *
+ * @param ca_certificate_path
+ * @param ca_key_path
+ * @returns {Promise<{cert: string, key: string}>}
+ */
 async function generate_new_client(ca_certificate_path, ca_key_path) {
     const cert_dir = path.join(__dirname, "client");
 
